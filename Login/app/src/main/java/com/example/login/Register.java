@@ -19,14 +19,14 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        et_id=(EditText)findViewById(R.id.et_id);
-        et_pass=(EditText)findViewById(R.id.et_pass);
+        et_id=(EditText)findViewById(R.id.et_id2);
+        et_pass=(EditText)findViewById(R.id.et_pass2);
         btn_signin = (Button)findViewById(R.id.btn_signin);
 
         btn_signin.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 str1=et_id.getText().toString();
-                str2=et_id.getText().toString();
+                str2=et_pass.getText().toString();
                 Intent intent =new Intent(Register.this, MainActivity.class);
                 intent.putExtra("id", str1);
                 intent.putExtra("password", str2);

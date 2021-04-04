@@ -11,25 +11,25 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
+class Person{
+    String id;
+    String pass;
+}
 public class MainActivity extends AppCompatActivity {
     final Context context = this;
     EditText et_id, et_pass;
     Button btn_login, btn_change, btn_exit, btn_signup;
-    String[] id={};
-    String[] pass={};
-    public static final int SIZE = 100;
-    int i=0, j=0, k=0, a=0;
+    String id, pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i("gilbut", "onCreate");
 
-        et_id=(EditText)findViewById(R.id.et_id);
-        et_pass=(EditText)findViewById(R.id.et_pass);
+        Person person = new Person();
+        et_id=(EditText)findViewById(R.id.et_id2);
+        et_pass=(EditText)findViewById(R.id.et_pass2);
         btn_login=(Button)findViewById(R.id.btn_login);
         btn_signup=(Button)findViewById(R.id.btn_signup);
         btn_change=(Button)findViewById(R.id.btn_change);
@@ -38,27 +38,25 @@ public class MainActivity extends AppCompatActivity {
 
         btn_login.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent=getIntent();
-                id[i++]=intent.getStringExtra("id");
-                pass[j++]=intent.getStringExtra("password");
+                Intent intent=getIntent();//이 다음 Toast
+                person.id=intent.getStringExtra("id");
+                person.pass=intent.getStringExtra("password");
                 startActivity(intent);
-                for(k=0; k<SIZE; k++) {
-                    if (et_id.equals(id[k])&&et_pass.equals(pass[k])) {
-                        a=1;
-                        Intent intent2 = new Intent(MainActivity.this, messenger.class);
-                        startActivity(intent2);
-                        break;
-                    }
-                    else
-                        a=0;
-                        continue;
+                Toast.makeText(MainActivity.this, "person.id", Toast.LENGTH_LONG).show();
+                id=et_id.getText().toString();
+                pass=et_pass.getText().toString();
+                if (id.equals(person.id)&&pass.equals(person.pass)) {
 
-                }
-                if(a==1)
+                    Intent intent2 = new Intent(MainActivity.this, messenger.class);
+                    startActivity(intent2);
                     Toast.makeText(MainActivity.this, "로그인 성공", Toast.LENGTH_LONG).show();
+                    }
                 else
-                    Toast.makeText(MainActivity.this, "로그인 실패", Toast.LENGTH_LONG).show();
-            }
+                    Toast.makeText(MainActivity.this, person.pass, Toast.LENGTH_LONG).show();
+                }
+
+
+
         });
 
         btn_signup.setOnClickListener(new View.OnClickListener(){
