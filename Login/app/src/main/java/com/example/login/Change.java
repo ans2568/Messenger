@@ -9,43 +9,47 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Register extends AppCompatActivity {
+public class Change extends AppCompatActivity {
 
     EditText et_id, et_pass;
-    Button btn_signin, btn_cancel;
+    Button btn_change, btn_cancel;
     String str1, str2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_change);
 
-        et_id=(EditText)findViewById(R.id.et_id2);
-        et_pass=(EditText)findViewById(R.id.et_pass2);
-        btn_signin = (Button)findViewById(R.id.btn_signin);
-        btn_cancel = (Button)findViewById(R.id.btn_cancel);
+        et_id=(EditText)findViewById(R.id.et_id3);
+        et_pass=(EditText)findViewById(R.id.et_pass3);
+        btn_change = (Button)findViewById(R.id.btn_change2);
+        btn_cancel = (Button)findViewById(R.id.btn_cancel3);
 
-        btn_signin.setOnClickListener(new View.OnClickListener(){
+        btn_change.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 str1=et_id.getText().toString();
                 str2=et_pass.getText().toString();
-                Intent intent =new Intent(Register.this, MainActivity.class);
+                Intent intent =new Intent(Change.this, MainActivity.class);
                 intent.putExtra("id", str1);
                 intent.putExtra("password", str2);
                 startActivity(intent);
-                Toast.makeText(Register.this,"회원 등록 완료", Toast.LENGTH_LONG).show();
+                Toast.makeText(Change.this,"회원 변경 완료", Toast.LENGTH_LONG).show();
             }
 
         });
 
         btn_cancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent cancel = new Intent(Register.this, MainActivity.class);
+                Intent cancel = new Intent(Change.this, MainActivity.class);
                 startActivity(cancel);
             }
         });
-
     }
 }
+
+
+
+
 
 
 

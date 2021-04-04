@@ -42,17 +42,16 @@ public class MainActivity extends AppCompatActivity {
                 person.id=intent.getStringExtra("id");
                 person.pass=intent.getStringExtra("password");
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "person.id", Toast.LENGTH_LONG).show();
                 id=et_id.getText().toString();
                 pass=et_pass.getText().toString();
                 if (id.equals(person.id)&&pass.equals(person.pass)) {
 
-                    Intent intent2 = new Intent(MainActivity.this, messenger.class);
-                    startActivity(intent2);
+                    Intent login = new Intent(MainActivity.this, messenger.class);
+                    startActivity(login);
                     Toast.makeText(MainActivity.this, "로그인 성공", Toast.LENGTH_LONG).show();
                     }
                 else
-                    Toast.makeText(MainActivity.this, person.pass, Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "로그인 실패", Toast.LENGTH_LONG).show();
                 }
 
 
@@ -63,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this, Register.class);
                 startActivity(intent);
+            }
+        });
+
+        btn_change.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent change = new Intent(MainActivity.this, Change.class);
+                startActivity(change);
             }
         });
 

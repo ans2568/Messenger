@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
-        <activity android:name=".messenger"></activity>
+        <activity android:name=".Change"></activity>
+        <activity android:name=".messenger" />
         <activity android:name=".Register" />
         <activity android:name=".MainActivity">
             <intent-filter>
