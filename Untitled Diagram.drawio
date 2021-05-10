@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-10T02:55:16.768Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="Ad9_VXOVBxPh-DcyWzQz" version="14.6.10" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-10T02:55:32.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="YKGREfY_Q0yeLlQqzz7_" version="14.6.10" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2489" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -31,20 +31,6 @@
         </mxCell>
         <mxCell id="NzZAGEB3F6CMIuEyulUL-17" value="+Display()&#xa;+payActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext, JTextField paytext) : void&#xa;+main(String[]args) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
           <mxGeometry y="268" width="650" height="62" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="Payment" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="720" width="660" height="290" as="geometry">
-            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ysIOBUqKoVY2F0vvS1PK-1" value="&#xa;-americano : Americano //아메리카노 객체 생성&#xa;-cafelatte : CafeLatte //카페라떼 객체 생성&#xa;-cappuccino : Cappuccino //카푸치노 객체 생성&#xa;-cafemocha : CafeMocha //카페모카 객체 생성" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="26" width="660" height="194" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--23" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="220" width="660" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="NzZAGEB3F6CMIuEyulUL-41" value="+Payment() &#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="228" width="660" height="62" as="geometry" />
         </mxCell>
         <mxCell id="ysIOBUqKoVY2F0vvS1PK-2" value="Menu_btn" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="490" width="660" height="196" as="geometry">
@@ -180,12 +166,6 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-485" y="613" as="sourcePoint" />
             <mxPoint x="-560.2399999999998" y="613.9599999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-42" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ysIOBUqKoVY2F0vvS1PK-1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="80" y="870" as="sourcePoint" />
-            <mxPoint x="80" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
