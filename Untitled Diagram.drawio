@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-10T14:14:17.432Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="aMoPNnHeNFJdiTHg4s2w" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-10T14:22:37.442Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="hW3-wmN1hM9353m5ZRjb" version="14.6.11" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2489" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,21 +19,21 @@
           <mxGeometry y="150" width="240" height="160" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--13" value="Display extends JFrame" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="10" width="650" height="520" as="geometry">
+          <mxGeometry x="20" y="10" width="650" height="750" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--14" value="-frame : JFrame // 메인 GUI&#xa;-frame2 : JFrame // 재고 관리 GUI&#xa;+ count : int // 수량&#xa;+ change : int // 거스름돈&#xa;+ plus : JButton // +버튼&#xa;+ minus : JButton // -버튼&#xa;+ menu_name : JTextField // 이름 JTextField&#xa;+ menu_num : JTextField // 수량 JTextField&#xa;+ menu_price : JTextField // 가격 JTextField&#xa;+ menu_pay : JTextField // 지불할 금액 JTextField&#xa;+ name_lb : JLabel // 이름 JLabel&#xa;+ num_lb : JLabel // 수량 JLabel&#xa;+ price_lb : JLabel // 가격 JLabel&#xa;+ pay_lb : JLabel // 지불할 금액 JLabel&#xa;+ plus_ft, minus_ft : Font // +버튼 -버튼 글자 크기&#xa;+ receipt : JLabel // GUI에서 영수증 라벨 출력&#xa;+ textarea : JTextArea // GUI에서 영수증 내용 출력하는 곳&#xa;+ scroll : JScrollPane // textarea의 스크롤&#xa;+ payment_btn : JButton // 결제 버튼&#xa;+ font : Font //글자 크기 조정" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
-          <mxGeometry y="26" width="650" height="354" as="geometry" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--14" value="-frame : JFrame // 메인 GUI&#xa;-frame2 : JFrame // 재고 관리 GUI&#xa;+ count : int // 수량&#xa;+ change : int // 거스름돈&#xa;+ plus : JButton // +버튼&#xa;+ minus : JButton // -버튼&#xa;+ menu_name : JTextField // 이름 JTextField&#xa;+ menu_num : JTextField // 수량 JTextField&#xa;+ menu_price : JTextField // 가격 JTextField&#xa;+ menu_pay : JTextField // 지불할 금액 JTextField&#xa;+ water_remain : JTextField&#xa;+ coffeebean_remain : JTextField&#xa;+ milk_remain : JTextField&#xa;+ chocolate_remain : JTextField&#xa;+ name_lb : JLabel // 이름 JLabel&#xa;+ num_lb : JLabel // 수량 JLabel&#xa;+ price_lb : JLabel // 가격 JLabel&#xa;+ pay_lb : JLabel // 지불할 금액 JLabel&#xa;+ water_lb : JLabel&#xa;+ coffeebean_lb : JLabel&#xa;+ milk_lb : JLabel&#xa;+ chocolate_lb : JLabel&#xa;+ plus_ft : Font // +버튼 글자 크기&#xa;+ minus_ft : Font // -버튼 글자 크기&#xa;+ receipt : JLabel // GUI에서 영수증 라벨 출력&#xa;+ textarea : JTextArea // GUI에서 영수증 내용 출력하는 곳&#xa;+ scroll : JScrollPane // textarea의 스크롤&#xa;+ payment_btn : JButton // 결제 버튼&#xa;+ font : Font //글자 크기 조정&#xa;- beverage : Beverage&#xa;- americano : Americano&#xa;- cafelatte : CafeLatte&#xa;- cappuccino : Cappuccino&#xa;- cafemocha : CafeMocha" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
+          <mxGeometry y="26" width="650" height="584" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--15" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
-          <mxGeometry y="380" width="650" height="8" as="geometry" />
+          <mxGeometry y="610" width="650" height="8" as="geometry" />
         </mxCell>
         <mxCell id="NzZAGEB3F6CMIuEyulUL-17" value="+Display()&#xa;+plusActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext) : void&#xa;// +버튼 클릭 시 수량은 1개씩 늘어나고 가격은 그에 맞춰서 변경&#xa;+minusActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext) : void&#xa;// +버튼 클릭 시 수량은 1개씩 줄어들고 가격은 그에 맞춰서 변경&#xa;+payActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext, JTextField paytext) : void&#xa;+main(String[]args) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
-          <mxGeometry y="388" width="650" height="132" as="geometry" />
+          <mxGeometry y="618" width="650" height="132" as="geometry" />
         </mxCell>
         <mxCell id="ysIOBUqKoVY2F0vvS1PK-2" value="Menu_btn" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="670" width="660" height="120" as="geometry">
+          <mxGeometry x="20" y="850" width="660" height="120" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -116,17 +116,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IjcQzbSurSEDAEcO_p8l-1" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NzZAGEB3F6CMIuEyulUL-17" edge="1">
-          <mxGeometry x="-0.2431" width="160" relative="1" as="geometry">
-            <mxPoint x="30" y="273" as="sourcePoint" />
-            <mxPoint x="345" y="670" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="345" y="560" />
-              <mxPoint x="345" y="560" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-0" value="Water" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-790" y="1060" width="180" height="70" as="geometry" />
         </mxCell>
@@ -207,6 +196,14 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-310" y="420" as="sourcePoint" />
             <mxPoint x="-150" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-25" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.508;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NzZAGEB3F6CMIuEyulUL-17" target="ysIOBUqKoVY2F0vvS1PK-2">
+          <mxGeometry x="-0.2431" width="160" relative="1" as="geometry">
+            <mxPoint x="410" y="780" as="sourcePoint" />
+            <mxPoint x="410" y="750" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
