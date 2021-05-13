@@ -1,105 +1,105 @@
-<mxfile host="app.diagrams.net" modified="2021-05-10T14:24:52.004Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="TPelfn1Fh6y3fn2LB5-U" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-13T08:17:32.230Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="M30SgFEOp31NhYMgt1U1" version="14.6.11" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2489" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1958" dy="1946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="Beverage" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-510" y="270" width="240" height="310" as="geometry">
+          <mxGeometry x="-669" y="270" width="510" height="270" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NzZAGEB3F6CMIuEyulUL-26" value="+name : String&#xa;+price : String&#xa;-water : Water&#xa;-coffeebean : Coffeebean&#xa;-milk : Milk&#xa;-chocolate : Chocolate" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="26" width="240" height="114" as="geometry" />
+        <mxCell id="NzZAGEB3F6CMIuEyulUL-26" value="-name : String // 이름&#xa;-price : int  // 가격&#xa;-water : Water // 해당 음료에서 사용하는 물의 양&#xa;-coffeebean : Coffeebean // 해당 음료에서 사용하는 원두의 양&#xa;-milk : Milk // 해당 음료에서 사용하는 우유의 양&#xa;-chocolate : Chocolate // 해당 음료에서 사용하는 초콜릿의 양" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="26" width="510" height="114" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="140" width="240" height="10" as="geometry" />
+          <mxGeometry y="140" width="510" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="dty7Gcx2FUj21WIFv3_P-40" value="+Beverage()&#xa;+mk_am(int count) : void&#xa;+mk_cl(int count) : void&#xa;+mk_cm(int count) : void&#xa;+mk_cp(int count) : void&#xa;+getName() : String&#xa;+setName(String name) : void&#xa;+getPrice() : String&#xa;+setPrice(String price) : void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="150" width="240" height="160" as="geometry" />
+        <mxCell id="dty7Gcx2FUj21WIFv3_P-40" value="+Beverage()&#xa;+mk_bvg(int count) L void // count : 잔의 수 ,  잔의 수에 맞게 음료 제조&#xa;+getName() : String&#xa;+setName(String name) : void&#xa;+getPrice() : int&#xa;+setPrice(int price) : void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="150" width="510" height="120" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--13" value="Display extends JFrame" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="90" width="650" height="750" as="geometry">
+          <mxGeometry x="89" y="240" width="650" height="450" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--14" value="-frame : JFrame // 메인 GUI&#xa;-frame2 : JFrame // 재고 관리 GUI&#xa;+ count : int // 수량&#xa;+ change : int // 거스름돈&#xa;+ plus : JButton // +버튼&#xa;+ minus : JButton // -버튼&#xa;+ menu_name : JTextField // 이름 JTextField&#xa;+ menu_num : JTextField // 수량 JTextField&#xa;+ menu_price : JTextField // 가격 JTextField&#xa;+ menu_pay : JTextField // 지불할 금액 JTextField&#xa;+ water_remain : JTextField&#xa;+ coffeebean_remain : JTextField&#xa;+ milk_remain : JTextField&#xa;+ chocolate_remain : JTextField&#xa;+ name_lb : JLabel // 이름 JLabel&#xa;+ num_lb : JLabel // 수량 JLabel&#xa;+ price_lb : JLabel // 가격 JLabel&#xa;+ pay_lb : JLabel // 지불할 금액 JLabel&#xa;+ water_lb : JLabel&#xa;+ coffeebean_lb : JLabel&#xa;+ milk_lb : JLabel&#xa;+ chocolate_lb : JLabel&#xa;+ plus_ft : Font // +버튼 글자 크기&#xa;+ minus_ft : Font // -버튼 글자 크기&#xa;+ receipt : JLabel // GUI에서 영수증 라벨 출력&#xa;+ textarea : JTextArea // GUI에서 영수증 내용 출력하는 곳&#xa;+ scroll : JScrollPane // textarea의 스크롤&#xa;+ payment_btn : JButton // 결제 버튼&#xa;+ font : Font //글자 크기 조정&#xa;- beverage : Beverage&#xa;- americano : Americano&#xa;- cafelatte : CafeLatte&#xa;- cappuccino : Cappuccino&#xa;- cafemocha : CafeMocha" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
-          <mxGeometry y="26" width="650" height="584" as="geometry" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--14" value="-frame : JFrame // 메인 GUI&#xa;+ count : int // 수량&#xa;+ change : int // 거스름돈&#xa;+ payment_btn : JButton // 결제 버튼&#xa;+ plus : JButton // +버튼&#xa;+ minus : JButton // -버튼&#xa;+ plus_ft : Font // +버튼 글자 크기&#xa;+ minus_ft : Font // -버튼 글자 크기&#xa;+ textarea : JTextArea // GUI에서 영수증 내용 출력하는 곳&#xa;+ scroll : JScrollPane // textarea의 스크롤&#xa;+ font : Font //글자 크기 조정&#xa;- beverage : Beverage&#xa;- americano : Americano&#xa;- cafelatte : CafeLatte&#xa;- cappuccino : Cappuccino&#xa;- cafemocha : CafeMocha" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
+          <mxGeometry y="26" width="650" height="284" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--15" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
-          <mxGeometry y="610" width="650" height="8" as="geometry" />
+          <mxGeometry y="310" width="650" height="8" as="geometry" />
         </mxCell>
         <mxCell id="NzZAGEB3F6CMIuEyulUL-17" value="+Display()&#xa;+plusActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext) : void&#xa;// +버튼 클릭 시 수량은 1개씩 늘어나고 가격은 그에 맞춰서 변경&#xa;+minusActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext) : void&#xa;// +버튼 클릭 시 수량은 1개씩 줄어들고 가격은 그에 맞춰서 변경&#xa;+payActionBtn(JTextField nametext, JTextField counttext, JTextField pricetext, JTextField paytext) : void&#xa;+main(String[]args) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
-          <mxGeometry y="618" width="650" height="132" as="geometry" />
+          <mxGeometry y="318" width="650" height="132" as="geometry" />
         </mxCell>
         <mxCell id="ysIOBUqKoVY2F0vvS1PK-2" value="Menu_btn" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="1010" width="660" height="120" as="geometry">
+          <mxGeometry x="390" y="800" width="420" height="140" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ysIOBUqKoVY2F0vvS1PK-3" value="+ menu_btn : JButton // 음료 버튼&#xa;+ menu_label : JLabel // 음료 가격 라벨&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="ysIOBUqKoVY2F0vvS1PK-2" vertex="1">
-          <mxGeometry y="26" width="660" height="44" as="geometry" />
+          <mxGeometry y="26" width="420" height="44" as="geometry" />
         </mxCell>
         <mxCell id="ysIOBUqKoVY2F0vvS1PK-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" parent="ysIOBUqKoVY2F0vvS1PK-2" vertex="1">
-          <mxGeometry y="70" width="660" height="8" as="geometry" />
+          <mxGeometry y="70" width="420" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="ysIOBUqKoVY2F0vvS1PK-5" value="+Menu_btn(String name, String price) &#xa;+addActionBtn(JTextField nametext) //음료 버튼 클릭 시 nametext인 JTextField에 음료 이름 출력 : void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="ysIOBUqKoVY2F0vvS1PK-2" vertex="1">
-          <mxGeometry y="78" width="660" height="42" as="geometry" />
+        <mxCell id="ysIOBUqKoVY2F0vvS1PK-5" value="+Menu_btn(String name, String price) &#xa;+addActionBtn(JTextField nametext)&#xa; //음료 버튼 클릭 시 nametext인 JTextField에 음료 이름 출력 : void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="ysIOBUqKoVY2F0vvS1PK-2" vertex="1">
+          <mxGeometry y="78" width="420" height="62" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-12" value="Americano" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-780" y="70" width="180" height="60" as="geometry" />
+          <mxGeometry x="-780" y="70" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-12" vertex="1">
           <mxGeometry y="26" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-15" value="+Americano()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-12" vertex="1">
-          <mxGeometry y="34" width="180" height="26" as="geometry" />
+        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-15" value="+Americano()&#xa;// 이름 : 아메리카노, 가격 1000&#xa;+mk_bvg(int count) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-12" vertex="1">
+          <mxGeometry y="34" width="180" height="56" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-17" value="CafeLatte" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-580" y="70" width="183" height="60" as="geometry" />
+          <mxGeometry x="-580" y="70" width="183" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-17" vertex="1">
           <mxGeometry y="26" width="183" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-19" value="+CafeLatte()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-17" vertex="1">
-          <mxGeometry y="34" width="183" height="26" as="geometry" />
+        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-19" value="+CafeLatte()&#xa;// 이름 : 카페라떼, 가격 1500&#xa;+mk_bvg(int count) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-17" vertex="1">
+          <mxGeometry y="34" width="183" height="56" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-20" value="Cappuccino" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-380" y="70" width="180" height="60" as="geometry" />
+          <mxGeometry x="-380" y="70" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-20" vertex="1">
           <mxGeometry y="26" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-22" value="+Cappuccino()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-20" vertex="1">
-          <mxGeometry y="34" width="180" height="26" as="geometry" />
+        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-22" value="+Cappuccino()&#xa;// 이름 카푸치노, 가격 1500&#xa;+mk_bvg(int count) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-20" vertex="1">
+          <mxGeometry y="34" width="180" height="56" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-23" value="CafeMocha" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-190" y="70" width="180" height="60" as="geometry" />
+          <mxGeometry x="-190" y="70" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-23" vertex="1">
           <mxGeometry y="26" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-25" value="+CafeMocha()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-23" vertex="1">
-          <mxGeometry y="34" width="180" height="26" as="geometry" />
+        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-25" value="+CafeMocha()&#xa;// 이름 : 카페모카, 가격 2000&#xa;+mk_bvg(int count) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ym-9lMWiXJVq3XCHo4kO-23" vertex="1">
+          <mxGeometry y="34" width="180" height="56" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-26" value="Material" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-545" y="650" width="310" height="260" as="geometry">
+          <mxGeometry x="-568" y="650" width="310" height="210" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-27" value="+m_name : String&#xa;+remain : int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="Ym-9lMWiXJVq3XCHo4kO-26" vertex="1">
+        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-27" value="-m_name : String // 재료 이름&#xa;-remain : int // 재고" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="Ym-9lMWiXJVq3XCHo4kO-26" vertex="1">
           <mxGeometry y="26" width="310" height="44" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-28" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" parent="Ym-9lMWiXJVq3XCHo4kO-26" vertex="1">
           <mxGeometry y="70" width="310" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-29" value="+Material()&#xa;+water_use(int count) : int&#xa;+coffeebean_use(int count) : int&#xa;+milk_use(int count) : int&#xa;+chocolate_use(int count) : int&#xa;+setName(String name) : void&#xa;+getName() : String&#xa;+setRemain(int remain) : void&#xa;+getRemain() : int&#xa;+addmaterial(String name, int remain) : Material" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="Ym-9lMWiXJVq3XCHo4kO-26" vertex="1">
-          <mxGeometry y="80" width="310" height="180" as="geometry" />
+        <mxCell id="Ym-9lMWiXJVq3XCHo4kO-29" value="+Material()&#xa;+Material(String name, int remain)&#xa;+setName(String name) : void&#xa;+getName() : String&#xa;+setRemain(int remain) : void&#xa;+getRemain() : int&#xa;+addmaterial(String name, int remain) : Material" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" parent="Ym-9lMWiXJVq3XCHo4kO-26" vertex="1">
+          <mxGeometry y="80" width="310" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-32" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.489;exitY=1.083;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ym-9lMWiXJVq3XCHo4kO-15" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-680" y="150" as="sourcePoint" />
-            <mxPoint x="-100" y="130" as="targetPoint" />
+            <mxPoint x="-100" y="160" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-692" y="200" />
               <mxPoint x="-100" y="200" />
@@ -108,8 +108,8 @@
         </mxCell>
         <mxCell id="Ym-9lMWiXJVq3XCHo4kO-34" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-488" y="130" as="sourcePoint" />
-            <mxPoint x="-290" y="130" as="targetPoint" />
+            <mxPoint x="-488" y="160" as="sourcePoint" />
+            <mxPoint x="-290" y="160" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-488" y="200" />
               <mxPoint x="-290" y="200" />
@@ -117,44 +117,44 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-0" value="Water" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-790" y="1060" width="180" height="70" as="geometry" />
+          <mxGeometry x="-820" y="1060" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-0" vertex="1">
           <mxGeometry y="26" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-2" value="+water()&#xa;+water_use(int count) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-0" vertex="1">
+        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-2" value="+Water() // 이름 : 물 재고 100&#xa;+water_use() : int // 물 사용량 " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-0" vertex="1">
           <mxGeometry y="34" width="180" height="36" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-3" value="Coffeebean" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-590" y="1060" width="180" height="70" as="geometry" />
+          <mxGeometry x="-633" y="1060" width="213" height="70" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-3" vertex="1">
-          <mxGeometry y="26" width="180" height="8" as="geometry" />
+          <mxGeometry y="26" width="213" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-5" value="+coffeebean()&#xa;+coffeebean_use(int count) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-3" vertex="1">
-          <mxGeometry y="34" width="180" height="36" as="geometry" />
+        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-5" value="+Coffeebean() // 이름 : 원두 재고 100&#xa;+coffeebean_use() : int // 원두 사용량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-3" vertex="1">
+          <mxGeometry y="34" width="213" height="36" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-6" value="Milk" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-390" y="1060" width="180" height="70" as="geometry" />
+          <mxGeometry x="-410" y="1060" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-6" vertex="1">
           <mxGeometry y="26" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-8" value="+Milk()&#xa;+milk_use(int count) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-6" vertex="1">
+        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-8" value="+Milk() // 이름 : 우유 재고 100&#xa;+milk_use() : int //우유 사용량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-6" vertex="1">
           <mxGeometry y="34" width="180" height="36" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-9" value="Chocolate" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-190" y="1060" width="180" height="70" as="geometry" />
+          <mxGeometry x="-220" y="1060" width="210" height="70" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-9" vertex="1">
-          <mxGeometry y="26" width="180" height="8" as="geometry" />
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-11" value="+Chocolate()&#xa;+chocolate_use(int count) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-9" vertex="1">
-          <mxGeometry y="34" width="180" height="36" as="geometry" />
+        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-11" value="+Chocolate() //이름 : 초콜릿 재고 100&#xa;+chocolate_use() : int //초콜릿 사용량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="CHgw-Z8MtAXEy-6fnTRL-9" vertex="1">
+          <mxGeometry y="34" width="210" height="36" as="geometry" />
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-16" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.471;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Ym-9lMWiXJVq3XCHo4kO-29" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-400" y="1000" as="sourcePoint" />
+            <mxPoint x="-420" y="1000" as="sourcePoint" />
             <mxPoint x="-399" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -163,9 +163,9 @@
             <mxPoint x="-250" y="950" as="sourcePoint" />
             <mxPoint x="-200" y="900" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-700" y="1000" />
+              <mxPoint x="-730" y="1000" />
               <mxPoint x="-400" y="1000" />
-              <mxPoint x="-100" y="1000" />
+              <mxPoint x="-115" y="1000" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -174,15 +174,15 @@
             <mxPoint x="-690" y="990" as="sourcePoint" />
             <mxPoint x="-90" y="990" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-500" y="1000" />
+              <mxPoint x="-526" y="1000" />
               <mxPoint x="-400" y="1000" />
-              <mxPoint x="-300" y="1000" />
+              <mxPoint x="-320" y="1000" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="CHgw-Z8MtAXEy-6fnTRL-22" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="zkfFHV4jXpPFQw0GAbJ--6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-390" y="200" as="sourcePoint" />
+            <mxPoint x="-414" y="200" as="sourcePoint" />
             <mxPoint x="-150" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -198,12 +198,32 @@
             <mxPoint x="-250" y="411" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CHgw-Z8MtAXEy-6fnTRL-25" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.508;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NzZAGEB3F6CMIuEyulUL-17" target="ysIOBUqKoVY2F0vvS1PK-2" edge="1">
-          <mxGeometry x="-0.2431" width="160" relative="1" as="geometry">
-            <mxPoint x="410" y="780" as="sourcePoint" />
-            <mxPoint x="410" y="750" as="targetPoint" />
-            <Array as="points" />
-            <mxPoint as="offset" />
+        <mxCell id="PMvM78o7Z3unA4pKeWAn-1" value="Menu_text" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="800" width="330" height="220" as="geometry">
+            <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PMvM78o7Z3unA4pKeWAn-2" value="+ menu_name : JTextField // 이름 JTextField&#xa;+ menu_num : JTextField // 수량 JTextField&#xa;+ menu_price : JTextField // 가격 JTextField&#xa;+ menu_pay : JTextField // 지불할 금액 JTextField&#xa;+ name_lb : JLabel // 이름 JLabel&#xa;+ num_lb : JLabel // 수량 JLabel&#xa;+ price_lb : JLabel // 가격 JLabel&#xa;+ pay_lb : JLabel // 지불할 금액 JLabel&#xa;+ receipt : JLabel // GUI에서 영수증 라벨 출력&#xa;+ font : Font //글자 크기 조정" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" vertex="1" parent="PMvM78o7Z3unA4pKeWAn-1">
+          <mxGeometry y="26" width="330" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="PMvM78o7Z3unA4pKeWAn-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=14;" vertex="1" parent="PMvM78o7Z3unA4pKeWAn-1">
+          <mxGeometry y="210" width="330" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="PMvM78o7Z3unA4pKeWAn-5" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.497;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NzZAGEB3F6CMIuEyulUL-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="460" y="730" as="sourcePoint" />
+            <mxPoint x="412" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PMvM78o7Z3unA4pKeWAn-6" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="PMvM78o7Z3unA4pKeWAn-1" target="ysIOBUqKoVY2F0vvS1PK-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="760" as="sourcePoint" />
+            <mxPoint x="560" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="205" y="760" />
+              <mxPoint x="410" y="760" />
+              <mxPoint x="600" y="760" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
