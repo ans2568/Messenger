@@ -25,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i("gilbut", "onCreate");
 
-        Person person = new Person();
+
         et_id=(EditText)findViewById(R.id.et_id2);
         et_pass=(EditText)findViewById(R.id.et_pass2);
         btn_login=(Button)findViewById(R.id.btn_login);
@@ -35,9 +34,11 @@ public class MainActivity extends AppCompatActivity {
         btn_change=(Button)findViewById(R.id.btn_change);
         btn_exit=(Button)findViewById(R.id.btn_exit);
 
-
         btn_login.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
+                Person person = new Person();
+                person.id="";
+                person.pass="";
                 Intent intent=getIntent();//이 다음 Toast
                 person.id=intent.getStringExtra("id");
                 person.pass=intent.getStringExtra("password");
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 pass=et_pass.getText().toString();
                 if (id.equals(person.id)&&pass.equals(person.pass)) {
 
-                    Intent login = new Intent(MainActivity.this, messenger.class);
+                    Intent login = new Intent(MainActivity.this, chat.class);
                     startActivity(login);
                     Toast.makeText(MainActivity.this, "로그인 성공", Toast.LENGTH_LONG).show();
                     }
